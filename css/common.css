@@ -54,19 +54,19 @@ body {
   text-decoration: underline;
 }
 
+.btn {
+  height: 39px;
+  padding: 0 20px;
+  background: var(--light-gray);
+  color: var(--dark-gray);
+  font-size: calc(var(--body) * 0.875);
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
 /* color */
-
-/* Color styles */
-  /* 
-  --light-gray: rgba(235, 235, 235, 1);
-  --medium-gray: rgba(168, 168, 168, 1);
-  --black: rgba(44, 44, 44, 1);
-  --dark-gray: rgba(110, 110, 110, 1);
-  --primary: rgba(154, 199, 91, 1);
-  --secondary: rgba(85, 118, 44, 1);
-  --white: rgba(255, 255, 255, 1);
-*/
-
 
 .primary {
   color: var(--primary);
@@ -75,4 +75,3 @@ body {
 .secondary {
   color: var(--secondary);
 }
-
