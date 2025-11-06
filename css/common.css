@@ -3,7 +3,7 @@
 
 :root {
   /* Layout */
-  --base--unit: 27px;
+  --base-unit: 27px;
   --container: 1272px;
 
   /* Color styles */
@@ -19,7 +19,7 @@
   /* Text-size styles */
   --body--ff: "Open Sans", sans-serif;
   --body: 16px;
-  --banner--tt: calc(var(--base--unit) * 2);
+  --banner--tt: calc(var(--base-unit) * 2);
   --section--tt: calc(var(--body) * 2);
   --content--tt: calc(var(--body) * 1.5);
   --body--link: var(--body);
@@ -27,38 +27,43 @@
 }
 
 /* Layout */
+.container {
+  width: var(--container);
+  margin: 0 auto;
+}
+
 .big_pd {
-  padding: calc(var(--base--unit) * 3) 0;
+  padding: calc(var(--base-unit) * 3) 0;
 }
 
 .big_top_pd {
-  padding-top: calc(var(--base--unit) * 3);
+  padding-top: calc(var(--base-unit) * 3);
 }
 
 .hidden {
   position: absolute;
   left: 0;
-  top: -999999999em;
+  top: -99999em;
   width: 0;
   height: 0;
   overflow: hidden;
 }
 
-/* Typography */
-
+/* typography */
 body {
   /* 
   font-family: var(--body--ff);
   font-size: var(--body);
-  line-height: var(--base--unit); 
+  line-height:var(--base-unit); 
   */
-
-  font: var(--body)/var(--base--unit) var(--body--ff);
+  font: var(--body)/var(--base-unit) var(--body--ff);
 }
 
 .banner_tt {
   font-size: var(--banner--tt);
+  /* 54px */
   line-height: var(--banner--tt);
+  /* 54px */
 }
 
 .section_tt {
@@ -83,12 +88,16 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  border-radius: 3px;
 }
 
-/* color */
-
+/* colors */
 .primary {
   color: var(--primary);
+}
+
+.primary_bg {
+  background: var(--primary);
 }
 
 .secondary {
@@ -100,7 +109,6 @@ body {
 }
 
 /* Form */
-
 form {
   width: 350px;
   margin: 0 auto;
@@ -158,4 +166,38 @@ header {
   background: var(--white);
   padding: var(--base-unit) 0;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+header>div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  display: block;
+  width: 161px;
+  height: 54px;
+  background: url('../images/logo.png') no-repeat;
+  text-indent: -99999em;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header nav ul li:first-child {
+  margin-right: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  gap: 10px;
+  color: var(--light-gray);
+}
+
+header nav ul li:first-child a {
+  color: var(--black);
 }
