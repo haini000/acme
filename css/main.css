@@ -40,3 +40,65 @@
   color: #439CCF;
   font-size: 36px;
 }
+
+.testimonial .wrapper {
+  height: 126px;
+  overflow: hidden;
+  position: relative;
+}
+
+.testmonial_list {
+  transform: 0.5s;
+  display: flex;
+  width: calc(var(--container) * 3);
+}
+
+
+.testmonial_list li {
+  width: 100%;
+  text-align: center;
+}
+
+.testmonial_list li:first-child {
+  left: 0;
+}
+
+.testmonial_list li:nth-child(2) {
+  left: 100%;
+}
+
+.testmonial_list li:last-child {
+  left: 200%;
+}
+.testmonial_list li p {
+  font-size: 24px;
+  line-height: 36px;
+  color: #489DCD;
+  font-weight: 300;
+  font-style: italic;
+  width: 55%;
+  margin: 0 auto 27px;
+}
+
+.testmonial_list li small {
+  color: #489DCD;  
+}
+
+.testimonial button {
+  position: absolute;
+  color: var(--light-gray);
+  top: 50px;
+  transform: translateY(-50%);
+}
+
+.testimonial button span {
+  font-size: 45px;
+}
+
+.testimonialbutton.prev {
+  left: 0;
+}
+
+.testimonial button.next {
+  right: 0;
+}
