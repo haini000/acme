@@ -106,3 +106,17 @@
   color: var(--medium-gray);
   margin-bottom: 54px;
 }
+
+footer .copyright {
+  line-height: 27px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap:32px;
+}
+
+footer .copyright a {
+  text-decoration: underline;
+  color: var(--primary);
+}
