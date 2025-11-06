@@ -89,3 +89,20 @@
 .testimonial button.next {
   right: 0;
 }
+
+.cta {
+  background-color: #292C2E;
+  text-align: center;
+}
+
+.cta .titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 27px;
+  font-weight: 300;
+  color: var(--medium-gray);
+  margin-bottom: 54px;
+}
