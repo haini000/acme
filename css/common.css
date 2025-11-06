@@ -42,10 +42,10 @@
 
 .hidden {
   position: absolute;
-  left: 0;
-  top: -99999em;
-  width: 0;
-  height: 0;
+  clip-path: inset(50%);
+  width: 1;
+  height: 1;
+  margin: -1px;
   overflow: hidden;
 }
 
@@ -181,6 +181,7 @@ header>div {
   background: url('../images/logo.png') no-repeat;
   text-indent: -99999em;
 }
+ 
 
 header nav ul {
   display: flex;
