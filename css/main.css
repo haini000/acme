@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--base-unit);
+  text-align: center;
 }
 
 .feature_list {
@@ -23,10 +24,9 @@
 .feature_list li {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
   gap: 27px;
+  text-align: center;
 }
 
 .feature_list .icon {
@@ -42,52 +42,39 @@
 }
 
 .testimonial .wrapper {
-  height: 126px;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
-.testmonial_list {
-  transform: 0.5s;
-  display: flex;
+.testimonial_list {
+  transition: 0.5s;
   width: calc(var(--container) * 3);
+  display: flex;
 }
 
-
-.testmonial_list li {
-  width: 100%;
+.testimonial_list li {
   text-align: center;
+  width: 100%;
 }
 
-.testmonial_list li:first-child {
-  left: 0;
-}
-
-.testmonial_list li:nth-child(2) {
-  left: 100%;
-}
-
-.testmonial_list li:last-child {
-  left: 200%;
-}
-.testmonial_list li p {
+.testimonial_list li p {
   font-size: 24px;
   line-height: 36px;
-  color: #489DCD;
-  font-weight: 300;
+  color: #489dcd;
+  font-weight: 300px;
   font-style: italic;
   width: 55%;
   margin: 0 auto 27px;
 }
 
-.testmonial_list li small {
-  color: #489DCD;  
+.testimonial_list li small {
+  color: #489dcd;
 }
 
 .testimonial button {
   position: absolute;
   color: var(--light-gray);
-  top: 50px;
+  top: 50%;
   transform: translateY(-50%);
 }
 
@@ -95,7 +82,7 @@
   font-size: 45px;
 }
 
-.testimonialbutton.prev {
+.testimonial button.prev {
   left: 0;
 }
 
