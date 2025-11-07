@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/bootstrap-utilities.min.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -18,21 +20,25 @@
 <body>
   <header>
     <div class="container">
-      <h1 class="logo">
-        <a href="index.html">
-          <img src="images/logo.png" alt="logo">
-          <span class="hidden">ACME</span>
-        </a>
-      </h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">home</a>/<a href="about.html">about</a></li>
-          <li><a href="sign_in.html" class="btn"><span class="material-symbols-outlined">lock</span>sing in</a></li>
-          <li><a href="sign_up.html" class="btn primary_bg secondary">sign up for free</a></li>
-        </ul>
-      </nav>
+      <div class="d-flex justify-content-between d-flex align-items-center">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="logo">
+            <span class="hidden">ACME</span>
+          </a>
+        </h1>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">home</a>/<a href="about.html">about</a></li>
+            <li><a href="sign_in.html" class="btn"><span class="material-symbols-outlined">lock</span>sing in</a></li>
+            <li><a href="sign_up.html" class="btn primary_bg secondary">sign up for free</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
+
   <section class="banner layout big_top_pd banner_bg">
     <div class="titles">
       <h2 class="banner_tt">Portfolio Manager</h2>
@@ -41,11 +47,12 @@
     <a href="" class="btn big primary_bg secondary">sign up for free</a>
     <img src="images/banner.png" alt="">
   </section>
+
   <main class="container">
     <section class="feature big_pd">
       <h2 class="hidden">feature list</h2>
-      <ul class="feature_list">
-        <li>
+      <ul class="feature_list row gap-0">
+        <li class="col-md-4">
           <div class="icon">
             <span class="material-symbols-outlined">person</span>
           </div>
@@ -55,7 +62,7 @@
             dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam
           </p>
         </li>
-        <li>
+        <li class="col-md-4">
           <div class="icon">
             <span class="material-symbols-outlined">list</span>
           </div>
@@ -65,7 +72,7 @@
             dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam
           </p>
         </li>
-        <li>
+        <li class="col-md-4">
           <div class="icon">
             <span class="material-symbols-outlined">star</span>
           </div>
