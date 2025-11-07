@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --body-fonts: "Roboto", sans-serif;
+}
+
+body {
+    font-family: var(--body-fonts);
+}
+
+.title {
+    @apply font-bold text-gray-700 uppercase
+}

@@ -1,0 +1,25 @@
+{
+  "name": "acme-portfolio",
+  "version": "1.0.0",
+  "description": "- 과정명 - [이스트캠프] 오르미 프론트엔드 개발(React, HTML/CSS/JavaScript) - 기간 - 2025-10-16 ~ 2026-03-04 - 1차 프로젝트 : 2025/11 ~",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haini000/acme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/haini000/acme/issues"
+  },
+  "homepage": "https://github.com/haini000/acme#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  }
+}
